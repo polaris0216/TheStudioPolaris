@@ -1,0 +1,609 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+/*全体共通*/
+.kiwi{
+    font-family: "Kiwi Maru";
+    font-weight: 300;
+}
+
+a{ overflow:hidden; }
+a img:hover{
+	transform:scale(1.1);
+	transition:0.3s;
+}
+
+/*top 開始*/
+    .main-container{
+        width: 100%;
+        
+        position: relative;
+        z-index: 0;
+    }
+        .top-content-back{
+            width: 100%;
+            height: 1200px;
+            background-image:url("/img/starnight.jpg");
+            background-size: cover;
+            overflow: hidden;
+        }
+            .top-content{
+                width: 100%;
+                min-width: 1000px;
+                text-align: center;
+                position: absolute;
+                top:500px ;
+                
+            }
+                .top-catchcopy h2{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 64px;
+                    font-weight: 300;
+                    line-height: 120px;
+                    
+                }
+
+                .sns-icon{
+                    width: 250px;
+                    height:50px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 390px 0 0 80%;
+                }
+                .sns-icon a{
+                    width: 50px;
+                    height: 50px;
+                }
+/*top 修了*/
+
+/*about 開始*/
+    .about-title{
+        width: 100%;
+        text-align: center;
+        font-family: "Montserrat";
+        position: relative;
+        margin-top: 209px;
+        margin-bottom: 251px;
+
+    }
+        .about-title h2{
+            font-weight: 400;
+            font-size: 50px;
+            width: 236px;
+            margin: 0 auto;
+        }
+            .about-title h2::before{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                left: -40%;
+                top: 50%;
+                transition: all 1s;
+                opacity: 0;
+                
+            }
+                .about-title h2.active::before{
+                    content: "";
+                    position: absolute;
+                    width: 40%;
+                    height: 5px;
+                    background-color: #FFFFFF;
+                    overflow: hidden;
+                    left: 0;
+                    top: 50%;
+                    opacity: 1;
+                }
+
+            .about-title h2::after{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                right: -40%;
+                top: 50%;
+                transition: all 1s;
+                opacity: 0;
+            } 
+                .about-title h2.active::after{
+                    content: "";
+                    position: absolute;
+                    width: 40%;
+                    height: 5px;
+                    background-color: #FFFFFF;
+                    overflow: hidden;
+                    right: 0;
+                    top: 50%;
+                    opacity: 1;
+                }
+    
+    .about-subtitle{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 52px;
+    }  
+        .about-subtitle h3{
+            font-weight: 400;
+            font-size: 26px;
+            font-family: "Kiwi Maru";
+        }
+
+    .about-content-main{
+        display: flex;
+        flex-direction: row;
+        width: 1225px;
+        margin: 0 auto 246px auto;
+    }
+        .about-pic{
+            width: 500px;
+            height: 334px;
+            margin-right: 52px;
+        }
+
+        .about-text{
+            width: 673px;
+        }
+
+            .about-text dl{
+                display: flex;
+                flex-direction: row;
+                margin:8px 0 ;
+                font-family: "Kiwi Maru";
+                font-weight: 400;
+                font-size: 24px;
+            }
+                .about-text dl dt{
+                    width: 190px;
+                }
+                .about-text dl dd{
+                    width: 487px;
+                }
+                .about-text p{
+                    width: 487px;
+                    font-family: "Kiwi Maru";
+                    font-size: 26px;
+                    font-weight: 400;
+                    margin-top: 50px;
+                }
+
+
+/*about 修了*/
+
+/*service 開始*/
+.service-title{
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
+    position: relative;
+    margin-top: 209px;
+    margin-bottom: 251px;
+
+}
+    .service-title h2{
+        font-weight: 400;
+        font-size: 50px;
+        width: 236px;
+        margin: 0 auto;
+    }
+        .service-title h2::before{
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 5px;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            left: -40%;
+            top: 50%;
+            transition: all 1s;
+            opacity: 0;
+            
+        }
+            .service-title h2.active::before{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                left: 0;
+                top: 50%;
+                opacity: 1;
+            }
+
+        .service-title h2::after{
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 5px;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            right: -40%;
+            top: 50%;
+            transition: all 1s;
+            opacity: 0;
+        } 
+            .service-title h2.active::after{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                right: 0;
+                top: 50%;
+                opacity: 1;
+            }
+
+    .service-box{
+        width:65.28%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    } 
+        .service-box-line{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 100px;
+        }
+            .service-box-border{
+                width: 400px;
+                height: 650px;
+                border: 5px solid #D9D9D9;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                margin: 0 20px;
+            }
+                .box-title{
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                    .box-title h3{
+                        font-size: 40px;
+                        font-family: "Kiwi Maru";
+                        font-weight: 400;
+                        margin: 30px auto 10px auto;
+                        white-space: nowrap;
+                    }
+
+                    .box-title h4{
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 24px;
+                        word-wrap: break-word;
+                    }
+                .box-icon{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 50px auto 58px auto;
+                }
+                    .box-icon img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                
+                .box-text{
+                    width: 317px;
+                    height: 300px;
+                    margin:0 auto;
+                }
+                    .box-text p{
+                        font-family: "Kiwi Maru";
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 34px;
+                        margin: 0 auto 0 auto;
+                        text-align: center;
+
+                    }
+
+
+/*service 終了*/
+
+/*works 開始*/
+.works-title{
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
+    position: relative;
+    margin-top: 209px;
+    margin-bottom: 151px;
+
+}
+    .works-title h2{
+        font-weight: 400;
+        font-size: 50px;
+        width: 236px;
+        margin: 0 auto;
+    }
+        .works-title h2::before{
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 5px;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            left: -40%;
+            top: 50%;
+            transition: all 1s;
+            opacity: 0;
+            
+        }
+            .works-title h2.active::before{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                left: 0;
+                top: 50%;
+                opacity: 1;
+            }
+
+        .works-title h2::after{
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 5px;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            right: -40%;
+            top: 50%;
+            transition: all 1s;
+            opacity: 0;
+        } 
+            .works-title h2.active::after{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                right: 0;
+                top: 50%;
+                opacity: 1;
+            }
+    .works-box{
+        width:69.58%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    } 
+        .works-box p{
+            font-family: "Kiwi Maru";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 34px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .works-box-line{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            .works-box-border{
+                width: 300px;
+                height: 382px;
+                margin: 0 10px 120px 10px;
+            }
+            .works-box-border-etc{
+                width: 300px;
+                height: 382px;
+                margin: 0 10px 120px 10px;
+                white-space: nowrap;
+            }
+                .box-worksicon{
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                    .box-worksicon img{
+                        width: 300px;
+                        height: 300px;
+                        margin: 0 auto;
+                    }
+                .box-workstitle{
+                    text-align: center;
+                }
+                    .box-workstitle h3{
+                        font-family: "Kiwi Maru";
+                        font-weight: 400;
+                        font-size: 24px;
+                        width: 100%;
+                        margin-top: 10px;
+                        
+                    }
+                    .box-workstitle h4{
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 16px;
+                        width: 100%;
+                        margin-top: 10px;
+
+                    }
+                    .box-workstitle-etc h3{
+                        font-family: "Kiwi Maru";
+                        font-weight: 400;
+                        font-size: 24px;
+                        width: 100%;
+                        margin-top: 50px;
+                        
+                    }
+                    .box-workstitle-etc h4 p{
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 16px;
+                        width: 100%;
+                        margin-top: 10px;
+                        text-align: inherit;
+                        line-height: 10px;
+                        margin-bottom: 0px;
+                    }
+
+/*works 修了*/
+
+/*contact 開始*/
+.contact-title{
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
+    position: relative;
+    margin-top: 209px;
+    margin-bottom: 251px;
+
+}
+    .contact-title h2{
+        font-weight: 400;
+        font-size: 50px;
+        width: 236px;
+        margin: 0 auto;
+    }
+        .contact-title h2::before{
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 5px;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            left: -40%;
+            top: 50%;
+            transition: all 1s;
+            opacity: 0;
+            
+        }
+            .contact-title h2.active::before{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                left: 0;
+                top: 50%;
+                opacity: 1;
+            }
+
+        .contact-title h2::after{
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 5px;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            right: -40%;
+            top: 50%;
+            transition: all 1s;
+            opacity: 0;
+        } 
+            .contact-title h2.active::after{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 5px;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                right: 0;
+                top: 50%;
+                opacity: 1;
+            }
+
+    .contact-box{
+        width:65%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    } 
+            .inquiry1{
+                display: flex;
+                flex-direction: row;
+            }
+            .inquiry2{
+                display: flex;
+                flex-direction: row;
+            }
+            .inquiry3{
+                display: flex;
+                flex-direction: row;
+            }
+            .inquiry4{
+                display: flex;
+                flex-direction: row;
+            }
+                .labelset{
+                    width: 227px;
+                    height: 56px;
+                    margin-bottom: 56px;
+                }
+                    .inquiryleft{
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 36px;
+                    }
+                    .inquiryright{
+                        width: 75.75%;
+                    }
+
+                    input#title{
+                        width:100%;
+                        background-color: #F4F4F4;
+                        height: 56px;
+                        border-radius: 10px;
+                        border:#D9D9D9 solid 5px;
+                    }
+                    input#telnum{
+                        width:100%;
+                        background-color: #F4F4F4;
+                        height: 56px;
+                        border-radius: 10px;
+                        border:#D9D9D9 solid 5px;
+                    }
+                    input#mail{
+                        width:100%;
+                        background-color: #F4F4F4;
+                        height: 56px;
+                        border-radius: 10px;
+                        border:#D9D9D9 solid 5px;
+                    }
+                    input#message{
+                        width:100%;
+                        background-color: #F4F4F4;
+                        height: 286px;
+                        border-radius: 10px;
+                        border:#D9D9D9 solid 5px;
+                    }
+            .button2{
+                width: 246px;
+                height: 100px;
+                background-color: rgba(241,21,21,0.5);
+                border: #D9D9D9 solid 5px;
+                border-radius: 10px;
+                margin:100px auto 78px auto;
+            }     
+                .buttonmiddle2{
+                margin: 21px auto;
+                text-align: center;
+                }
+                    #lastbutton1{
+                        color: #FFFFFF;
+                        font-size: 36px;
+
+                    }
+/*contact 修了*/
+/*footer 開始*/
+    .footer{
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0 auto 52px auto;
+        text-align: center;
+    }
+/*footer 修了*/
