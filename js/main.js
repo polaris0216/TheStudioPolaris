@@ -43,5 +43,5 @@ function set_posi() {
             $(".contact-title h2").addClass("active");
         }
     });
-    
+ //thank you for watching   
 }
